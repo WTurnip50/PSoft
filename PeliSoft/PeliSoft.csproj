@@ -56,12 +56,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="borrar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="borrar.Designer.cs">
-      <DependentUpon>borrar.cs</DependentUpon>
-    </Compile>
     <Compile Include="fmrCarrito.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,9 +88,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="borrar.resx">
-      <DependentUpon>borrar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="fmrCarrito.resx">
       <DependentUpon>fmrCarrito.cs</DependentUpon>
     </EmbeddedResource>

@@ -32,7 +32,7 @@ namespace BLL
         public Carrito delete()
         {
             var parameters = new DynamicParameters();
-            parameters.Add("@idCarrito", idPelicula);
+            parameters.Add("@idCarrito", idCarrito);
             return dataAccess.QuerySingle<Carrito>("stp_carrito_delete", parameters);
         }
         public IEnumerable<Carrito> GetAll()

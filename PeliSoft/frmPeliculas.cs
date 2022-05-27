@@ -98,18 +98,6 @@ namespace PeliSoft
            
         }
 
-        private void btnCarrito_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            foreach (Form form in Application.OpenForms)
-
-                if (form.GetType() == typeof(fmrCarrito))
-                {
-                    form.Activate();
-                    return;
-                }
-            new fmrCarrito()
-            { MdiParent = this }.Show();
-        }
 
         private void btnAdd_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -129,6 +117,8 @@ namespace PeliSoft
                     costo = costo,
                     idUsuario = id
                 }.AddCarrito();
+                XtraMessageBox.Show("Añadida al carrito", Application.ProductName, MessageBoxButtons.OK
+               , MessageBoxIcon.Information);
             }
         }
 

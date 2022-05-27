@@ -29,11 +29,7 @@ namespace PeliSoft
         }
         private void Carrito_Load(object sender, EventArgs e)
         {
-
-            carritoBindingSource.DataSource = new Carrito().GetAll();
-            lupPelicula.DataSource = new Pelicula().GetAll();
-            lupUsuario.DataSource = new Usuario().GetAll();
-
+            cargar();
         }
 
         private void btnDel_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -46,12 +42,18 @@ namespace PeliSoft
                 view.CopyToClipboard();
                 string valor = view.GetRowCellDisplayText(selectedRowHandles[0], view.Columns[0]);
                 int idP = Int32.Parse(valor);
-                if (new Carrito() { idPelicula = idP }.delete() != null)
-                {
-                    XtraMessageBox.Show("Removida", Application.ProductName, MessageBoxButtons.OK
-                 , MessageBoxIcon.Information);
-                }
+                new Carrito() { idCarrito = idP }.delete();
+                XtraMessageBox.Show("Removida", Application.ProductName, MessageBoxButtons.OK
+               , MessageBoxIcon.Information);
+                cargar();
             }
+        }
+        // Aqui van metodos de la clase que se llaman cuando se necesitan
+        private void cargar()
+        {
+            carritoBindingSource.DataSource = new Carrito().GetAll();
+            lupPelicula.DataSource = new Pelicula().GetAll();
+            lupUsuario.DataSource = new Usuario().GetAll();
         }
     }
 }
