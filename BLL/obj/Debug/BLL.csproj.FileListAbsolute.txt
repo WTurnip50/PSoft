@@ -1,0 +1,11 @@
+C:\Users\Israel\source\repos\PeliSoft\BLL\bin\Debug\BLL.dll
+C:\Users\Israel\source\repos\PeliSoft\BLL\bin\Debug\BLL.pdb
+C:\Users\Israel\source\repos\PeliSoft\BLL\bin\Debug\Dapper.dll
+C:\Users\Israel\source\repos\PeliSoft\BLL\bin\Debug\Dapper.xml
+C:\Users\Israel\source\repos\PeliSoft\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Israel\source\repos\PeliSoft\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Israel\source\repos\PeliSoft\BLL\obj\Debug\BLL.dll
+C:\Users\Israel\source\repos\PeliSoft\BLL\obj\Debug\BLL.pdb
+C:\Users\Israel\source\repos\PeliSoft\BLL\bin\Debug\DAL.dll
+C:\Users\Israel\source\repos\PeliSoft\BLL\bin\Debug\DAL.pdb
+C:\Users\Israel\source\repos\PeliSoft\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
