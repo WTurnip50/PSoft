@@ -55,5 +55,10 @@ namespace PeliSoft
             lupPelicula.DataSource = new Pelicula().GetAll();
             lupUsuario.DataSource = new Usuario().GetAll();
         }
+
+        private void btnSell_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
     }
 }

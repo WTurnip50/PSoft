@@ -92,17 +92,5 @@ namespace PeliSoft
             { MdiParent = this }.Show();
         }
 
-        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            foreach (Form form in Application.OpenForms)
-
-                if (form.GetType() == typeof(borrar))
-                {
-                    form.Activate();
-                    return;
-                }
-            new borrar()
-            { MdiParent = this }.Show();
-        }
     }
 }

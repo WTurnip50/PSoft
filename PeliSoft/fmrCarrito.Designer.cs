@@ -212,6 +212,7 @@ namespace PeliSoft
             this.btnSell.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSell.ImageOptions.Image")));
             this.btnSell.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnSell.ImageOptions.LargeImage")));
             this.btnSell.Name = "btnSell";
+            this.btnSell.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSell_ItemClick);
             // 
             // barDockControlTop
             // 
