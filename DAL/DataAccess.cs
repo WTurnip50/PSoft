@@ -14,8 +14,9 @@ namespace DAL
         #region singleton
         private static volatile DataAccess instance = null;
         private static readonly object padlock = new object();
-        public static string conString = "Data Source = Israel-PC; Initial Catalog = P; " +
-                "Integrated Security = true";
+       // public static string conString = "Data Source = Israel-PC; Initial Catalog = P; " +
+       //         "Integrated Security = true";
+        public static string conString = "Server=psoftbdd.database.windows.net;Database= psoft1bdd;User Id=IsraelAdmin;Password=SKy.2305";
         public string InitialCatalog = "";
         public string DataSource = "";
         public string UserID = "";
@@ -80,11 +81,11 @@ namespace DAL
                     commandType: CommandType.StoredProcedure);
             }
         }
-        public static IEnumerable<T> Query<T>(string query, DynamicParameters parameters)
+        public  T Query<T>(string query, DynamicParameters parameters)
         {
             using (var con = new SqlConnection(conString))
             {
-                return con.Query<T>(query,
+                return (T)con.Query<T>(query,parameters,
                     commandType: CommandType.StoredProcedure);
             }
         }

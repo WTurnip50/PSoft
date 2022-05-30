@@ -16,15 +16,18 @@ namespace PeliSoft
     public partial class frmPeliculas : DevExpress.XtraEditors.XtraForm
     {
         private string codFol = "PSOF-0000";
-        private bool isFound = false;
+        private string folio;
+        private bool isfound = false;
         private int id;
 
-        public frmPeliculas(int idUser)
+        public frmPeliculas(int idUser,string folio)
         {
             InitializeComponent();
             Usuario usuario = new Usuario() { IdUsuario = idUser }.getById();
             id = idUser;
+            this.folio = folio;
             lbUser.Text = usuario.nombre;
+            lbFolio.Text = folio;
         }
 
         private void textEdit1_EditValueChanged(object sender, EventArgs e)
@@ -34,10 +37,10 @@ namespace PeliSoft
 
         private void frmPeliculas_Load(object sender, EventArgs e)
         {
-            string folio = Misc.SumaFolio(codFol, 1);
+            //string folio = Misc.SumaFolio(codFol, 1);
             //Random myObject = new Random();
             //int ranNum = myObject.Next(100, 150);
-            lbFolio.Text = folio;
+            lbFolio.Text = this.folio;
             cargar();
             this.btnClean.Visible = false;
             //XtraMessageBox.Show("Valor" + folio, Application.ProductName,
@@ -48,33 +51,7 @@ namespace PeliSoft
         {
             
 
-            if (!txtPelicula.Text.Equals(""))
-            {
-                peliculaBindingSource.ResetBindings(true);
-                if (new Pelicula(){ titulo = txtPelicula.Text }.getByTitulo()!=null)
-                {
-                    peliculaBindingSource.DataSource = new Pelicula()
-                    { titulo = txtPelicula.Text }.getByTitulo();
-                    generoBindingSource.DataSource = new Genero().GetAll();
-                    luLen.DataSource = new Lenguas().GetAll();
-                    luGen.DataSource = new Genero().GetAll();
-                    //isFound = true;
-                    return;
-                }
-                XtraMessageBox.Show("sin resultados ", Application.ProductName, MessageBoxButtons.OK
-                  , MessageBoxIcon.Exclamation);
-                return;
-
-            }
-            else
-            {
-                //XtraMessageBox.Show("campo vacio ", Application.ProductName, MessageBoxButtons.OK
-                //  , MessageBoxIcon.Exclamation);
-                cargar();
-                return;
-            }
-            cargar();
-            isFound = false;
+            
         }
 
         private void btnClean_Click(object sender, EventArgs e)
@@ -119,9 +96,40 @@ namespace PeliSoft
                 }.AddCarrito();
                 XtraMessageBox.Show("Añadida al carrito", Application.ProductName, MessageBoxButtons.OK
                , MessageBoxIcon.Information);
+
             }
         }
 
-        
+        private void btnFind_Click_1(object sender, EventArgs e)
+        {
+            if (!txtPelicula.Text.Equals(""))
+            {
+                peliculaBindingSource.ResetBindings(true);
+                if (new Pelicula() { titulo = txtPelicula.Text }.getByTitulo() != null)
+                {
+                    peliculaBindingSource.DataSource = new Pelicula()
+                    { titulo = txtPelicula.Text }.getByTitulo();
+                    generoBindingSource.DataSource = new Genero().GetAll();
+                    luLen.DataSource = new Lenguas().GetAll();
+                    luGen.DataSource = new Genero().GetAll();
+                    //isFound = true;
+                    return;
+                }
+                XtraMessageBox.Show("sin resultados ", Application.ProductName, MessageBoxButtons.OK
+                  , MessageBoxIcon.Exclamation);
+                return;
+
+            }
+            else
+            {
+                //XtraMessageBox.Show("campo vacio ", Application.ProductName, MessageBoxButtons.OK
+                //  , MessageBoxIcon.Exclamation);
+                cargar();
+                return;
+            }
+            cargar();
+            isfound = false;
+
+        }
     }
 }

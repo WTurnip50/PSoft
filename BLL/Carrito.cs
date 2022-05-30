@@ -26,7 +26,7 @@ namespace BLL
         {
             var parameters = new DynamicParameters();
             parameters.Add("@folio", folio);
-            return dataAccess.QuerySingle<Carrito>("stp_carrito_getFolio", parameters);
+            return dataAccess.Query<Carrito>("stp_carrito_getFolio", parameters);
         }
 
         public Carrito delete()

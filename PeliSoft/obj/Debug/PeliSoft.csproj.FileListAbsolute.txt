@@ -197,12 +197,10 @@ C:\Users\Israel\Documents\GitHub\PSoft\PeliSoft\bin\Debug\es\DevExpress.Office.v
 C:\Users\Israel\Documents\GitHub\PSoft\PeliSoft\bin\Debug\ja\DevExpress.Office.v20.1.Core.resources.dll
 C:\Users\Israel\Documents\GitHub\PSoft\PeliSoft\bin\Debug\ru\DevExpress.Office.v20.1.Core.resources.dll
 C:\Users\Israel\Documents\GitHub\PSoft\PeliSoft\obj\Debug\PeliSoft.csproj.AssemblyReference.cache
-C:\Users\Israel\Documents\GitHub\PSoft\PeliSoft\obj\Debug\PeliSoft.borrar.resources
 C:\Users\Israel\Documents\GitHub\PSoft\PeliSoft\obj\Debug\PeliSoft.fmrCarrito.resources
 C:\Users\Israel\Documents\GitHub\PSoft\PeliSoft\obj\Debug\PeliSoft.frmLogin.resources
 C:\Users\Israel\Documents\GitHub\PSoft\PeliSoft\obj\Debug\PeliSoft.frmMain.resources
 C:\Users\Israel\Documents\GitHub\PSoft\PeliSoft\obj\Debug\PeliSoft.frmPeliculas.resources
-C:\Users\Israel\Documents\GitHub\PSoft\PeliSoft\obj\Debug\PeliSoft.frmVenta.resources
 C:\Users\Israel\Documents\GitHub\PSoft\PeliSoft\obj\Debug\PeliSoft.Properties.Resources.resources
 C:\Users\Israel\Documents\GitHub\PSoft\PeliSoft\obj\Debug\PeliSoft.csproj.GenerateResource.cache
 C:\Users\Israel\Documents\GitHub\PSoft\PeliSoft\obj\Debug\PeliSoft.exe.licenses

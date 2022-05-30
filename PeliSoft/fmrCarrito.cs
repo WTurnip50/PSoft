@@ -15,17 +15,17 @@ namespace PeliSoft
 {
     public partial class fmrCarrito : DevExpress.XtraEditors.XtraForm
     {
-        private int idU;
-        private string folio;
+        public int idU;
+        public string folio;
         public fmrCarrito()
         {
             InitializeComponent();
         }
-        public fmrCarrito(int id)
+        public fmrCarrito(int id,string folio)
         {
             InitializeComponent();
             idU = id;
-            //this.folio = folio;
+            this.folio = folio;
         }
         private void Carrito_Load(object sender, EventArgs e)
         {
@@ -51,7 +51,7 @@ namespace PeliSoft
         // Aqui van metodos de la clase que se llaman cuando se necesitan
         private void cargar()
         {
-            carritoBindingSource.DataSource = new Carrito().GetAll();
+            carritoBindingSource.DataSource = new Carrito() { folio = this.folio }.getByFolio();
             lupPelicula.DataSource = new Pelicula().GetAll();
             lupUsuario.DataSource = new Usuario().GetAll();
         }

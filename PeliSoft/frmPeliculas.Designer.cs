@@ -60,12 +60,12 @@ namespace PeliSoft
             this.barManager2 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar1 = new DevExpress.XtraBars.Bar();
             this.btnAdd = new DevExpress.XtraBars.BarButtonItem();
-            this.btnView = new DevExpress.XtraBars.BarButtonItem();
             this.bar4 = new DevExpress.XtraBars.Bar();
             this.barDockControl1 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl2 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl3 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl4 = new DevExpress.XtraBars.BarDockControl();
+            this.btnView = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.peliculaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.generoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lenguasBindingSource)).BeginInit();
@@ -297,6 +297,7 @@ namespace PeliSoft
             this.btnFind.Size = new System.Drawing.Size(107, 33);
             this.btnFind.TabIndex = 17;
             this.btnFind.Text = "Buscar";
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click_1);
             // 
             // txtPelicula
             // 
@@ -363,12 +364,6 @@ namespace PeliSoft
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAdd_ItemClick_1);
             // 
-            // btnView
-            // 
-            this.btnView.Caption = "VerCarrito";
-            this.btnView.Id = 1;
-            this.btnView.Name = "btnView";
-            // 
             // bar4
             // 
             this.bar4.BarName = "Barra de estado";
@@ -412,6 +407,12 @@ namespace PeliSoft
             this.barDockControl4.Location = new System.Drawing.Point(1025, 51);
             this.barDockControl4.Manager = this.barManager2;
             this.barDockControl4.Size = new System.Drawing.Size(0, 597);
+            // 
+            // btnView
+            // 
+            this.btnView.Caption = "VerCarrito";
+            this.btnView.Id = 1;
+            this.btnView.Name = "btnView";
             // 
             // frmPeliculas
             // 

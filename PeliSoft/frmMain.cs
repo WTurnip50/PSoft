@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using BLL;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ namespace PeliSoft
     {
         private int idUser;
         private bool su;
+        private string codFol = "PSOF-0000";
         public frmMain(int id, string username)
         {
             InitializeComponent();
@@ -70,7 +72,7 @@ namespace PeliSoft
                     form.Activate();
                     return;
                 }
-            new frmPeliculas(idUser)
+            new frmPeliculas(idUser,Misc.SumaFolio(codFol,1))
             { MdiParent = this }.Show();
         }
 
@@ -88,7 +90,7 @@ namespace PeliSoft
                     form.Activate();
                     return;
                 }
-            new fmrCarrito(idUser)
+            new fmrCarrito(idUser,Misc.SumaFolio(codFol,1))
             { MdiParent = this }.Show();
         }
 

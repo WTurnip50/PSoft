@@ -7,3 +7,12 @@ C:\Users\Israel\source\repos\PeliSoft\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\Israel\source\repos\PeliSoft\DAL\obj\Debug\DAL.dll
 C:\Users\Israel\source\repos\PeliSoft\DAL\obj\Debug\DAL.pdb
 C:\Users\Israel\source\repos\PeliSoft\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Israel\Documents\GitHub\PSoft\DAL\bin\Debug\DAL.dll
+C:\Users\Israel\Documents\GitHub\PSoft\DAL\bin\Debug\DAL.pdb
+C:\Users\Israel\Documents\GitHub\PSoft\DAL\bin\Debug\Dapper.dll
+C:\Users\Israel\Documents\GitHub\PSoft\DAL\bin\Debug\Dapper.xml
+C:\Users\Israel\Documents\GitHub\PSoft\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Israel\Documents\GitHub\PSoft\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Israel\Documents\GitHub\PSoft\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Israel\Documents\GitHub\PSoft\DAL\obj\Debug\DAL.dll
+C:\Users\Israel\Documents\GitHub\PSoft\DAL\obj\Debug\DAL.pdb
